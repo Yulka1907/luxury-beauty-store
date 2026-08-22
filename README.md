@@ -29,6 +29,12 @@ BeautyShop — премиальный интернет‑магазин косм
 https://Yulka1907.github.io/beauty-shop/
 ## 📸 Скриншоты проекта
 
+### Страница регистрации
+![Страница регистрации](screenshots/index.png)
+
+### Вход
+![Вход](screenshots/login.png)
+
 ### Главная страница
 ![Главная](screenshots/main.png)
 
