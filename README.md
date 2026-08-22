@@ -35,9 +35,6 @@ https://Yulka1907.github.io/beauty-shop/
 ### Каталог
 ![Каталог](screenshots/catalog.png)
 
-### Карточка товара
-![Товар](screenshots/product.png)
-
 ### Корзина
 ![Корзина](screenshots/cart.png)
 
