@@ -27,3 +27,25 @@ BeautyShop — премиальный интернет‑магазин косм
 
 Ссылка на GitHub Pages: 
 https://Yulka1907.github.io/beauty-shop/
+## 📸 Скриншоты проекта
+
+### Главная страница
+![Главная](screenshots/main.png)
+
+### Каталог
+![Каталог](screenshots/catalog.png)
+
+### Карточка товара
+![Товар](screenshots/product.png)
+
+### Корзина
+![Корзина](screenshots/cart.png)
+
+### Оформление заказа
+![Оформление](screenshots/checkout.png)
+
+### Спасибо за заказ
+![Спасибо](screenshots/thanks.png)
+
+### Профиль
+![Профиль](screenshots/profile.png)20:50
