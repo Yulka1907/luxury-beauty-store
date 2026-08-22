@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Карточка товара</title>
+    <link rel="stylesheet" href="product.css">
+</head>
+
+<body>
+    <header class="header">
+        <h2 class="logo">BeautyShop</h2>
+        <nav class="nav">
+            <a href="main.html">Главная</a>
+            <a href="cataloge.html">Каталог</a>
+            <a href="cart.html">Корзина</a>
+            <a href="profile.html">Профиль</a>
+        </nav>
+    </header>
+
+    <div class="product-page">
+        <img src="https://www.letu.ru/common/img/pim/2026/04/GT_2e8efc20-ea43-437f-ba1f-221dd56e94ce.png"
+            class="product-page-img" alt="Товар">
+
+        <h2 class="product-title">Сыворотка для лица</h2>
+        <p class="product-price">1 890 ₽</p>
+        <div class="product-rating">⭐⭐⭐⭐</div>
+
+        <p class="product-desc">
+            Питательная сыворотка для сияния кожи.
+        </p>
+
+        <button class="product-btn" onclick="addToCart()">Добавить в корзину</button>
+    </div>
+    <a href="cataloge.html" class="back-btn">Назад</a>
+    <script>
+        function addToCart() {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+            const product = {
+                title: "Сыворотка для лица",
+                price: 1890,
+                img: "https://www.letu.ru/common/img/pim/2026/04/GT_2e8efc20-ea43-437f-ba1f-221dd56e94ce.png"
+            };
+
+            cart.push(product);
+            localStorage.setItem("cart", JSON.stringify(cart));
+
+            alert("Товар добавлен в корзину!");
+        }
+    </script>
+
+</body>
+
+</html>

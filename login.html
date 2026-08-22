@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Вход</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h1 class="form-title">Вход</h1>
+
+        <div class="input-group">
+            <span class="icon">📧</span>
+            <input type="email" id="LoginEmail" placeholder="Email">
+        </div>
+
+        <div class="input-group">
+            <span class="icon">🔒</span>
+            <input type="password" id="LoginPassword" placeholder="Пароль">
+            <span class="show-pass" onclick="toggleLoginPass()">👁️</span>
+        </div>
+
+        <button class="form-btn">Войти</button>
+
+        <p class="form-link">Нет аккаунта? <a href="index.html">Зарегистрироваться</a></p>
+    </div>
+
+
+    <script>
+        function toggleLoginPass() {
+            const input = document.getElementById("LoginPassword");
+            input.type = input.type === "password" ? "text" : "password";
+        }
+    </script>
+</body>
+
+</html>

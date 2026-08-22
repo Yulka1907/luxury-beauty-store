@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Карточка товара</title>
+    <link rel="stylesheet" href="product.css">
+</head>
+
+<body>
+    <header class="header">
+        <h2 class="logo">BeautyShop</h2>
+        <nav class="nav">
+            <a href="main.html">Главная</a>
+            <a href="cataloge.html">Каталог</a>
+            <a href="cart.html">Корзина</a>
+            <a href="profile.html">Профиль</a>
+        </nav>
+    </header>
+    <div class="product-page">
+        <img src="https://avatars.mds.yandex.net/i?id=80ff0340c4c457f2bdcc958caaf98d1f_l-5678271-images-thumbs&n=13"
+            height="300" class=".product-page-img
+" alt="Товар">
+        <h2 class="product-title">Крем ночной </h2>
+        <p class="product-price">1 490 p</p>
+        <div class="product-rating">⭐⭐⭐⭐</div>
+        <p class="product-desc">
+            Глубокое очищение и восстановление кожи..
+        </p>
+        <button class="product-btn" onclick="addToCart()">Добавить в корзину</button>
+
+    </div>
+    <a href="cataloge.html" class="back-btn">Назад</a>
+    <script>
+        function addToCart() {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+            const product = {
+                title: "Крем ночной",
+                price: 1490,
+                img: "https://avatars.mds.yandex.net/i?id=80ff0340c4c457f2bdcc958caaf98d1f_l-5678271-images-thumbs&n=13"
+            };
+
+            cart.push(product);
+            localStorage.setItem("cart", JSON.stringify(cart));
+
+            alert("Товар добавлен в корзину!");
+        }
+    </script>
+</body>
+
+</html>

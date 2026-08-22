@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Карточка товара</title>
+    <link rel="stylesheet" href="product.css">
+</head>
+
+<body>
+    <header class="header">
+        <h2 class="logo">BeautyShop</h2>
+        <nav class="nav">
+            <a href="main.html">Главная</a>
+            <a href="cataloge.html">Каталог</a>
+            <a href="cart.html">Корзина</a>
+            <a href="profile.html">Профиль</a>
+        </nav>
+    </header>
+    <div class="product-page">
+        <img src="https://avatars.mds.yandex.net/get-mpic/6277643/2a000001936314e440afde76e69fa7d111d7/orig" width="300"
+            height="300" class=".product-page-img
+" alt="Товар">
+        <h2 class="product-title">Тоник очищающий </h2>
+        <p class="product-price">790 p</p>
+        <div class="product-rating">⭐⭐⭐⭐⭐</div>
+        <p class="product-desc">
+            Освежающий тоник для ежедневного ухода.
+        </p>
+        <button class="product-btn" onclick="addToCart()">Добавить в корзину</button>
+
+    </div>
+    <a href="cataloge.html" class="back-btn">Назад</a>
+    <script>
+        function addToCart() {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+            const product = {
+                title: "Тоник очищающий",
+                price: 790,
+                img: "https://avatars.mds.yandex.net/get-mpic/6277643/2a000001936314e440afde76e69fa7d111d7/orig"
+            };
+
+            cart.push(product);
+            localStorage.setItem("cart", JSON.stringify(cart));
+
+            alert("Товар добавлен в корзину!");
+        }
+    </script>
+</body>
+
+</html>

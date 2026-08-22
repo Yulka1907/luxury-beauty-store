@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h1 class="form-title">Регистрация</h1>
+
+        <!-- Имя -->
+        <div class="input-group">
+            <span class="icon">👤</span>
+            <input type="text" id="RegName" placeholder="Имя">
+        </div>
+
+        <!-- Email -->
+        <div class="input-group">
+            <span class="icon">📧</span>
+            <input type="email" id="RegEmail" placeholder="Email">
+        </div>
+
+        <!-- Пароль -->
+        <div class="input-group">
+            <span class="icon">🔒</span>
+            <input type="password" id="RegPassword" placeholder="Пароль">
+            <span class="show-pass" onclick="toggleRegPass()">👁️</span>
+        </div>
+
+        <!-- Повторить пароль -->
+        <div class="input-group">
+            <span class="icon">🔒</span>
+            <input type="password" id="RegPassword2" placeholder="Повторите пароль">
+            <span class="show-pass" onclick="toggleRegPass2()">👁️</span>
+        </div>
+
+        <button class="form-btn">Создать аккаунт</button>
+
+        <p class="form-link">Уже есть аккаунт? <a href="login.html">Войти</a></p>
+    </div>
+
+
+    <script>
+        function toggleRegPass() {
+            const input = document.getElementById("RegPassword");
+            input.type = input.type === "password" ? "text" : "password";
+        }
+
+        function toggleRegPass2() {
+            const input = document.getElementById("RegPassword2");
+            input.type = input.type === "password" ? "text" : "password";
+        }
+    </script>
+
+
+</body>
+
+</html>

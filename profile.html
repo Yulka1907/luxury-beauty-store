@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Профиль пользователя</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+
+<body>
+    <header class="header">
+        <h2 class="logo">BeautyShop</h2>
+        <nav class="nav">
+            <a href="main.html">Главная</a>
+            <a href="cataloge.html">Каталог</a>
+            <a href="cart.html">Корзина</a>
+            <a href="profile.html">Профиль</a>
+        </nav>
+    </header>
+    <div class="profile-container">
+        <h1 class="profile-title">Ваш профиль</h1>
+
+        <div class="profile-card">
+            <img src="https://pngimg.com/uploads/pluto_disney/small/pluto_disney_PNG33.png" class="profile-avatar"
+                alt="avatar">
+            <div class="profile-info">
+                <p><strong>Имя:</strong><span id="user-name"></span></p>
+                <p><strong>Телефон:</strong><span id="user-phone"></span></p>
+                <p><strong>Email:</strong><span id="user-email"></span></p>
+            </div>
+        </div>
+        <h2 class="profile-subtitle">Редактировать данные</h2>
+
+        <form id="profile-form">
+            <div class="profile-group">
+                <label>Имя</label>
+                <input type="text" id="name-input">
+            </div>
+            <div class="profile-group">
+                <label>Телефон</label>
+                <input type="text" id="phone-input">
+            </div>
+            <div class="profile-group">
+                <label>Email</label>
+                <input type="text" id="email-input">
+            </div>
+
+            <button class="profile-btn" type="submit">Сохранить</button>
+
+        </form>
+        <button class="logout-btn" id="logout">Выйти</button>
+    </div>
+    <script src="profile.js"></script>
+
+</body>
+
+</html>
